@@ -12,10 +12,6 @@ result = re.findall(reg_email, html_text)
 with open("emails.html", 'w') as f:
   f.write(html_text)
 
-print("emails:")
-for res in result:
-  print(res)
-
 with open("emails.txt", 'w') as f:
   for res in result:
     f.write(res + "\n")
